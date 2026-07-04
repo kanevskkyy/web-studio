@@ -1,6 +1,14 @@
 .header {
   padding: 24px 0;
 
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+
+  background-color: var(--color-white);
+
   &__container {
     display: flex;
     justify-content: space-between;

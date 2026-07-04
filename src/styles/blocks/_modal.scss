@@ -1,0 +1,75 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  padding: 24px;
+  width: 408px;
+  max-width: 408px;
+  max-height: calc(100% - 32px);
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-modal);
+  box-shadow: 0 1px 6px rgba(46, 47, 66, 0.16);
+  overflow-y: auto;
+
+  &::backdrop {
+    background-color: var(--color-overlay);
+  }
+
+  &[open] {
+    animation: modal-fade-in 0.25s ease forwards;
+  }
+
+  &__close {
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--color-accent);
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    color: var(--color-text-main);
+
+    &[aria-label] {
+      position: absolute;
+    }
+
+    &:hover {
+      background-color: var(--color-primary-pressed);
+      border-color: var(--color-primary-pressed);
+      color: var(--color-white);
+    }
+  }
+
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__submit {
+    margin-inline: auto;
+    min-width: 169px;
+  }
+}
+
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
