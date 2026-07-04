@@ -1,12 +1,10 @@
 .header {
   padding: 24px 0;
-
   top: 0;
   left: 0;
   width: 100%;
   position: fixed;
   z-index: 999;
-
   background-color: var(--color-white);
 
   &__container {
@@ -19,6 +17,10 @@
     display: flex;
     align-items: center;
     gap: 76px;
+
+    @media (max-width: 1179px) {
+      gap: 40px;
+    }
   }
 
   &__logo {
@@ -43,10 +45,18 @@
   }
 
   &__nav {
+    @media (max-width: 767px) {
+      display: none;
+    }
+
     &-list {
       display: flex;
       align-items: center;
       gap: 40px;
+
+      @media (max-width: 1179px) {
+        gap: 40px;
+      }
     }
 
     &-item {
@@ -86,10 +96,20 @@
   &__contacts {
     font-style: normal;
 
+    @media (max-width: 767px) {
+      display: none;
+    }
+
     &-list {
       display: flex;
       align-items: center;
       gap: 40px;
+
+      @media (max-width: 1179px) {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+      }
     }
 
     &-item {
@@ -99,6 +119,35 @@
     &-link {
       font-weight: 400;
       color: var(--color-text-dark);
+
+      @media (max-width: 1179px) {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    line-height: 0;
+    color: var(--color-text-main);
+
+    @media (max-width: 767px) {
+      display: flex;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
     }
   }
 }

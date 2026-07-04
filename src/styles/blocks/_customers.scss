@@ -10,11 +10,30 @@
     display: flex;
     align-items: center;
     gap: 24px;
+
+    @media (max-width: 1179px) {
+      flex-wrap: wrap;
+      row-gap: 72px;
+      justify-content: center;
+    }
+
+    @media (max-width: 767px) {
+      row-gap: 48px;
+      column-gap: 16px;
+    }
   }
 
   &__item {
     flex-basis: calc((100% - 5 * 24px) / 6);
     height: 88px;
+
+    @media (max-width: 1179px) {
+      flex: 0 0 calc((100% - 48px) / 3);
+    }
+
+    @media (max-width: 767px) {
+      flex: 0 0 calc((100% - 16px) / 2);
+    }
   }
 
   &__link {

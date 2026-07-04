@@ -12,6 +12,10 @@
   box-shadow: 0 1px 6px rgba(46, 47, 66, 0.16);
   overflow-y: auto;
 
+  @media (max-width: 767px) {
+    width: calc(100% - 32px);
+  }
+
   &::backdrop {
     background-color: var(--color-overlay);
   }

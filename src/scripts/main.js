@@ -15,3 +15,17 @@ modal.addEventListener('click', (event) => {
         modal.close()
     }
 })
+
+const burgerBtn = document.querySelector('[data-menu-open]')
+const menuCloseBtn = document.querySelector('[data-menu-close]')
+const mobileMenu = document.querySelector('[data-mobile-menu]')
+
+burgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.add('mobile-menu--open')
+    document.documentElement.classList.add('is-lock')
+})
+
+menuCloseBtn.addEventListener('click', () => {
+    mobileMenu.classList.remove('mobile-menu--open')
+    document.documentElement.classList.remove('is-lock')
+})
