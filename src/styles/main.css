@@ -445,7 +445,7 @@ button[aria-label]::before {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(var(--color-bg-gray-rgb), 0.6), rgba(var(--color-bg-gray-rgb), 0.6)), url("../images/hero-bg.jpg");
+  background-image: linear-gradient(rgba(var(--color-bg-gray-rgb), 0.6), rgba(var(--color-bg-gray-rgb), 0.6)), url("../images/hero/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
