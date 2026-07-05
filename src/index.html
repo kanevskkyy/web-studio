@@ -18,13 +18,13 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link header__nav-link--current">Studio</a>
+                        <a href="index.html" class="header__nav-link header__nav-link--current">Studio</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Portfolio</a>
+                        <a href="portfolio.html" class="header__nav-link">Portfolio</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link">Contacts</a>
+                        <a href="contacts.html" class="header__nav-link">Contacts</a>
                     </li>
                 </ul>
             </nav>
@@ -71,9 +71,9 @@
 
         <nav class="mobile-menu__nav">
             <ul class="mobile-menu__nav-list">
-                <li><a href="#" class="mobile-menu__nav-link mobile-menu__nav-link--current">Studio</a></li>
-                <li><a href="#" class="mobile-menu__nav-link">Portfolio</a></li>
-                <li><a href="#" class="mobile-menu__nav-link">Contacts</a></li>
+                <li><a href="index.html" class="mobile-menu__nav-link mobile-menu__nav-link--current">Studio</a></li>
+                <li><a href="portfolio.html" class="mobile-menu__nav-link">Portfolio</a></li>
+                <li><a href="contacts.html" class="mobile-menu__nav-link">Contacts</a></li>
             </ul>
         </nav>
 
@@ -830,7 +830,7 @@
 
     <h3 class="modal__title text-medium">Leave your contacts and we will call you back</h3>
 
-    <form class="modal__form" action="#" method="post">
+    <form class="modal__form" action="#" method="post" data-modal-form novalidate>
         <div class="form-field">
             <label class="form-field__label text-small" for="modal-name">Name</label>
             <div class="form-field__control">
@@ -839,8 +839,9 @@
                     <path d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z"
                           fill="currentColor"/>
                 </svg>
-                <input class="form-field__input" type="text" name="name" id="modal-name">
+                <input class="form-field__input" type="text" name="name" id="modal-name" data-field="name">
             </div>
+            <p class="form-field__error" data-error="name"></p>
         </div>
 
         <div class="form-field">
@@ -851,8 +852,9 @@
                     <path d="M4.4502 5.5H5.70215C6.18557 5.50008 6.58837 5.85927 6.64551 6.33984L6.85547 8.16211C6.88859 8.45211 6.78875 8.73456 6.58594 8.9375L5.24707 10.2764L4.99121 10.5332L5.1543 10.8564C6.24468 13.0069 8.00105 14.7549 10.1426 15.8447L10.4668 16.0098L10.7236 15.7529L12.0547 14.4209C12.2578 14.2179 12.5408 14.119 12.8311 14.1523L14.6699 14.3623V14.3613C15.1516 14.4198 15.5046 14.8237 15.5 15.293V16.5498C15.5 17.098 15.0446 17.5295 14.5332 17.498C8.61173 17.1301 3.86987 12.3951 3.50195 6.4668C3.47045 5.95536 3.90202 5.5 4.4502 5.5Z"
                           fill="currentColor" stroke="currentColor"/>
                 </svg>
-                <input class="form-field__input" type="tel" name="phone" id="modal-phone">
+                <input class="form-field__input" type="tel" name="phone" id="modal-phone" data-field="phone">
             </div>
+            <p class="form-field__error" data-error="phone"></p>
         </div>
 
         <div class="form-field">
@@ -863,28 +865,34 @@
                     <path d="M13.5 0H1.5C0.675 0 0.00749999 0.675 0.00749999 1.5L0 10.5C0 11.325 0.675 12 1.5 12H13.5C14.325 12 15 11.325 15 10.5V1.5C15 0.675 14.325 0 13.5 0ZM13.2 3.1875L7.8975 6.5025C7.6575 6.6525 7.3425 6.6525 7.1025 6.5025L1.8 3.1875C1.6125 3.0675 1.5 2.865 1.5 2.6475C1.5 2.145 2.0475 1.845 2.475 2.1075L7.5 5.25L12.525 2.1075C12.9525 1.845 13.5 2.145 13.5 2.6475C13.5 2.865 13.3875 3.0675 13.2 3.1875Z"
                           fill="currentColor"/>
                 </svg>
-                <input class="form-field__input" type="email" name="email" id="modal-email">
+                <input class="form-field__input" type="email" name="email" id="modal-email" data-field="email">
             </div>
+            <p class="form-field__error" data-error="email"></p>
         </div>
 
         <div class="form-field">
             <label class="form-field__label text-small" for="modal-comment">Comment</label>
             <textarea class="form-field__textarea" name="comment" id="modal-comment"
-                      placeholder="Text input"></textarea>
+                      placeholder="Text input" data-field="comment"></textarea>
+            <p class="form-field__error" data-error="comment"></p>
         </div>
 
         <div class="form-field form-field--checkbox">
-            <input class="form-field__checkbox" type="checkbox" name="agreement" id="modal-agreement">
+            <input class="form-field__checkbox" type="checkbox" name="agreement" id="modal-agreement" data-field="agreement">
             <label class="form-field__checkbox-label" for="modal-agreement">
                 I accept the terms and conditions of the
                 <a class="form-field__link" href="#">Privacy Policy</a>
             </label>
         </div>
+        <p class="form-field__error" data-error="agreement"></p>
 
         <button type="submit" class="button modal__submit">Send</button>
+
+        <p class="modal__success" data-modal-success>Thank you! We will contact you shortly.</p>
     </form>
 </dialog>
 
-<script src="scripts/main.js"></script>
+<script src="scripts/modal.js"></script>
+<script src="scripts/mobile-menu.js"></script>
 </body>
 </html>

@@ -78,4 +78,19 @@
     color: var(--color-primary);
     text-decoration: underline;
   }
+
+  &__error {
+    min-height: 16px;
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    color: var(--color-error);
+  }
+
+  &__input,
+  &__textarea {
+    &--invalid {
+      border-color: var(--color-error);
+    }
+  }
 }

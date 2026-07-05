@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebStudio — Our Projects & Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header__container">
+        <div class="header__left">
+            <a href="#" class="header__logo">
+                <span class="header__logo-accent">Web</span>Studio
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-link">Studio</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="portfolio.html" class="header__nav-link header__nav-link--current">Portfolio</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="contacts.html" class="header__nav-link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <address class="header__contacts">
+            <ul class="header__contacts-list">
+                <li class="header__contacts-item">
+                    <a href="mailto:info@devstudio.com" class="header__contacts-link">info@devstudio.com</a>
+                </li>
+                <li class="header__contacts-item">
+                    <a href="tel:+110001111111" class="header__contacts-link">+11 (000) 111-11-11</a>
+                </li>
+            </ul>
+        </address>
+
+        <button type="button" class="header__burger" aria-label="Open menu" data-menu-open>
+            <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_297053_2156)">
+                    <path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861" stroke="#2E2F42" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_297053_2156">
+                        <rect width="32" height="22" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<div class="mobile-menu" data-mobile-menu>
+    <div class="container mobile-menu__container">
+        <div class="mobile-menu__top">
+            <a href="#" class="header__logo">
+                <span class="header__logo-accent">Web</span>Studio
+            </a>
+            <button type="button" class="mobile-menu__close" aria-label="Close menu" data-menu-close>
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7M7 1L1 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__nav-list">
+                <li><a href="index.html" class="mobile-menu__nav-link">Studio</a></li>
+                <li><a href="portfolio.html" class="mobile-menu__nav-link mobile-menu__nav-link--current">Portfolio</a></li>
+                <li><a href="contacts.html" class="mobile-menu__nav-link">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu__bottom">
+            <address class="mobile-menu__contacts">
+                <a href="tel:+110001111111" class="mobile-menu__contacts-link mobile-menu__contacts-link--accent">+11 (000) 111-11-11</a>
+                <a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link">info@devstudio.com</a>
+            </address>
+
+            <ul class="mobile-menu__socials">
+                <li>
+                    <a class="mobile-menu__socials-link" href="https://www.instagram.com/" aria-label="Instagram">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_679354_384)">
+                                <path d="M15.9843 4.70404C15.9468 3.8539 15.8093 3.26944 15.6124 2.76299C15.4092 2.22541 15.0967 1.74412 14.6872 1.34401C14.2871 0.937683 13.8026 0.621948 13.2713 0.421957C12.7619 0.22502 12.1805 0.0875415 11.3303 0.0500586C10.4738 0.00940124 10.2019 0 8.02963 0C5.85733 0 5.58543 0.00940124 4.73212 0.0468842C3.88197 0.0843671 3.29751 0.221967 2.79119 0.418783C2.25348 0.621948 1.77219 0.934509 1.37209 1.34401C0.965758 1.74412 0.650145 2.22858 0.450033 2.75994C0.253096 3.26944 0.115618 3.85073 0.0781347 4.70087C0.0374774 5.55736 0.0280762 5.82926 0.0280762 8.00156C0.0280762 10.1739 0.0374774 10.4458 0.0749603 11.2991C0.112443 12.1492 0.250043 12.7337 0.446981 13.2401C0.650145 13.7777 0.965758 14.259 1.37209 14.6591C1.77219 15.0654 2.25666 15.3812 2.78801 15.5812C3.29751 15.7781 3.8788 15.9156 4.72906 15.9531C5.58226 15.9907 5.85428 16 8.02658 16C10.1989 16 10.4708 15.9907 11.3241 15.9531C12.1742 15.9156 12.7587 15.7781 13.265 15.5812C14.3403 15.1654 15.1904 14.3153 15.6062 13.2401C15.803 12.7306 15.9406 12.1492 15.9781 11.2991C16.0156 10.4458 16.025 10.1739 16.025 8.00156C16.025 5.82926 16.0218 5.55736 15.9843 4.70404ZM14.5435 11.2366C14.509 12.018 14.3778 12.4399 14.2684 12.7212C13.9995 13.4183 13.4463 13.9715 12.7493 14.2403C12.468 14.3497 12.043 14.481 11.2646 14.5153C10.4207 14.5529 10.1676 14.5622 8.03281 14.5622C5.89799 14.5622 5.64172 14.5529 4.80085 14.5153C4.01945 14.481 3.5975 14.3497 3.31619 14.2403C2.96932 14.1121 2.65359 13.909 2.39731 13.6433C2.13163 13.3838 1.92847 13.0713 1.80027 12.7244C1.69087 12.4431 1.55962 12.018 1.52532 11.2397C1.48771 10.3958 1.47843 10.1426 1.47843 8.00779C1.47843 5.87297 1.48771 5.6167 1.52532 4.77596C1.55962 3.99455 1.69087 3.5726 1.80027 3.29129C1.92847 2.9443 2.13163 2.62869 2.40049 2.37229C2.65981 2.10661 2.97237 1.90345 3.31937 1.77537C3.60067 1.66597 4.0258 1.53472 4.80403 1.50029C5.64794 1.46281 5.90117 1.45341 8.03586 1.45341C10.1738 1.45341 10.4269 1.46281 11.2678 1.50029C12.0492 1.53472 12.4712 1.66597 12.7525 1.77537C13.0993 1.90345 13.4151 2.10661 13.6714 2.37229C13.937 2.63174 14.1402 2.9443 14.2684 3.29129C14.3778 3.5726 14.509 3.99761 14.5435 4.77596C14.581 5.61987 14.5904 5.87297 14.5904 8.00779C14.5904 10.1426 14.581 10.3927 14.5435 11.2366Z" fill="#F4F4FD"/>
+                                <path d="M8.02961 3.89136C5.76049 3.89136 3.91943 5.73229 3.91943 8.00153C3.91943 10.2708 5.76049 12.1117 8.02961 12.1117C10.2989 12.1117 12.1398 10.2708 12.1398 8.00153C12.1398 5.73229 10.2989 3.89136 8.02961 3.89136ZM8.02961 10.6677C6.55752 10.6677 5.36344 9.47375 5.36344 8.00153C5.36344 6.52932 6.55752 5.33536 8.02961 5.33536C9.50182 5.33536 10.6958 6.52932 10.6958 8.00153C10.6958 9.47375 9.50182 10.6677 8.02961 10.6677V10.6677Z" fill="#F4F4FD"/>
+                                <path d="M13.262 3.72888C13.262 4.25877 12.8323 4.68842 12.3023 4.68842C11.7724 4.68842 11.3428 4.25877 11.3428 3.72888C11.3428 3.19887 11.7724 2.76934 12.3023 2.76934C12.8323 2.76934 13.262 3.19887 13.262 3.72888V3.72888Z" fill="#F4F4FD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_679354_384">
+                                    <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="mobile-menu__socials-link" href="https://x.com/?lang=uk" aria-label="Twitter">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 3.039C15.405 3.3 14.771 3.473 14.11 3.557C14.79 3.151 15.309 2.513 15.553 1.744C14.919 2.122 14.219 2.389 13.473 2.538C12.871 1.897 12.013 1.5 11.077 1.5C9.261 1.5 7.799 2.974 7.799 4.781C7.799 5.041 7.821 5.291 7.875 5.529C5.148 5.396 2.735 4.089 1.114 2.098C0.831 2.589 0.665 3.151 0.665 3.756C0.665 4.892 1.25 5.899 2.122 6.482C1.595 6.472 1.078 6.319 0.64 6.078C0.64 6.088 0.64 6.101 0.64 6.114C0.64 7.708 1.777 9.032 3.268 9.337C3.001 9.41 2.71 9.445 2.408 9.445C2.198 9.445 1.986 9.433 1.787 9.389C2.212 10.688 3.418 11.643 4.852 11.674C3.736 12.547 2.319 13.073 0.785 13.073C0.516 13.073 0.258 13.061 0 13.028C1.453 13.965 3.175 14.5 5.032 14.5C11.068 14.5 14.368 9.5 14.368 5.166C14.368 5.021 14.363 4.881 14.356 4.742C15.007 4.28 15.554 3.703 16 3.039Z" fill="#F4F4FD"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="mobile-menu__socials-link" href="https://www.facebook.com/?locale=uk_UA" aria-label="Facebook">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_679354_396)">
+                                <path d="M10.6648 2.65666H12.1254V0.112659C11.8734 0.0779924 11.0068 -7.62939e-06 9.99742 -7.62939e-06C7.89142 -7.62939e-06 6.44876 1.32466 6.44876 3.75933V5.99999H4.12476V8.84399H6.44876V16H9.29809V8.84466H11.5281L11.8821 6.00066H9.29742V4.04133C9.29809 3.21933 9.51942 2.65666 10.6648 2.65666Z" fill="#F4F4FD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_679354_396">
+                                    <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="mobile-menu__socials-link" href="https://ua.linkedin.com/" aria-label="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_679354_400)">
+                                <path d="M15.9961 16V15.9994H16.0001V10.1314C16.0001 7.2607 15.3821 5.04937 12.0261 5.04937C10.4128 5.04937 9.33009 5.9347 8.88809 6.77404H8.84143V5.31737H5.65942V15.9994H8.97276V10.71C8.97276 9.31737 9.23676 7.9707 10.9614 7.9707C12.6608 7.9707 12.6861 9.56004 12.6861 10.7994V16H15.9961Z" fill="#F4F4FD"/>
+                                <path d="M0.263916 5.31797H3.58125V16H0.263916V5.31797Z" fill="#F4F4FD"/>
+                                <path d="M1.92133 0C0.860667 0 0 0.860667 0 1.92133C0 2.982 0.860667 3.86067 1.92133 3.86067C2.982 3.86067 3.84267 2.982 3.84267 1.92133C3.842 0.860667 2.98133 0 1.92133 0V0Z" fill="#F4F4FD"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_679354_400">
+                                    <rect width="16" height="16" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<main>
+    <section class="portfolio-page">
+        <div class="container">
+            <div class="portfolio-page__filters">
+                <button type="button" class="portfolio-page__filter-btn portfolio-page__filter-btn--active" data-filter="all">All</button>
+                <button type="button" class="portfolio-page__filter-btn" data-filter="website">Web Site</button>
+                <button type="button" class="portfolio-page__filter-btn" data-filter="app">App</button>
+                <button type="button" class="portfolio-page__filter-btn" data-filter="design">Design</button>
+                <button type="button" class="portfolio-page__filter-btn" data-filter="marketing">Marketing</button>
+            </div>
+
+            <ul class="portfolio-page__list">
+                <li class="portfolio-page__item" data-category="app">
+                    <a href="#" class="portfolio-page__link">
+                        <div class="portfolio-page__image-wrapper">
+                            <img src="images/portfolio/banking-app.jpg" alt="Banking App Interface Concept" class="portfolio-page__image">
+                            <p class="portfolio-page__overlay-text">
+                                A set of quality market-leading application interface solutions for the mobile banking application.
+                            </p>
+                        </div>
+                        <div class="portfolio-page__content">
+                            <h3 class="portfolio-page__title">Banking App Interface Concept</h3>
+                            <p class="portfolio-page__category">App</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="portfolio-page__item" data-category="marketing">
+                    <a href="#" class="portfolio-page__link">
+                        <div class="portfolio-page__image-wrapper">
+                            <img src="images/portfolio/cashless-payment.jpg" alt="Cashless Payment" class="portfolio-page__image">
+                            <p class="portfolio-page__overlay-text">
+                                14 Stylish and User-Friendly App Design Concepts: Task Manager App, Calorie Tracker App, Exotic Fruit Ecommerce App, Cloud Storage App.
+                            </p>
+                        </div>
+                        <div class="portfolio-page__content">
+                            <h3 class="portfolio-page__title">Cashless Payment</h3>
+                            <p class="portfolio-page__category">Marketing</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="portfolio-page__item" data-category="app">
+                    <a href="#" class="portfolio-page__link">
+                        <div class="portfolio-page__image-wrapper">
+                            <img src="images/portfolio/meditation-app.jpg" alt="Meditation App" class="portfolio-page__image">
+                            <p class="portfolio-page__overlay-text">
+                                A minimal and calming interface for a meditation and mindfulness mobile application.
+                            </p>
+                        </div>
+                        <div class="portfolio-page__content">
+                            <h3 class="portfolio-page__title">Meditation App</h3>
+                            <p class="portfolio-page__category">App</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="portfolio-page__item" data-category="marketing">
+                    <a href="#" class="portfolio-page__link">
+                        <div class="portfolio-page__image-wrapper">
+                            <img src="images/portfolio/taxi-service.jpg" alt="Taxi Service" class="portfolio-page__image">
+                            <p class="portfolio-page__overlay-text">
+                                Branding and marketing materials designed to boost visibility for a modern taxi service.
+                            </p>
+                        </div>
+                        <div class="portfolio-page__content">
+                            <h3 class="portfolio-page__title">Taxi Service</h3>
+                            <p class="portfolio-page__category">Marketing</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="portfolio-page__item" data-category="design">
+                    <a href="#" class="portfolio-page__link">
+                        <div class="portfolio-page__image-wrapper">
+                            <img src="images/portfolio/screen-illustrations.jpg" alt="Screen Illustrations" class="portfolio-page__image">
+                            <p class="portfolio-page__overlay-text">
+                                A collection of vibrant illustrations designed for mobile app onboarding screens.
+                            </p>
+                        </div>
+                        <div class="portfolio-page__content">
+                            <h3 class="portfolio-page__title">Screen Illustrations</h3>
+                            <p class="portfolio-page__category">Design</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="portfolio-page__item" data-category="marketing">
+                    <a href="#" class="portfolio-page__link">
+                        <div class="portfolio-page__image-wrapper">
+                            <img src="images/portfolio/online-courses.jpg" alt="Online Courses" class="portfolio-page__image">
+                            <p class="portfolio-page__overlay-text">
+                                Marketing strategy and creative direction for an online education platform.
+                            </p>
+                        </div>
+                        <div class="portfolio-page__content">
+                            <h3 class="portfolio-page__title">Online Courses</h3>
+                            <p class="portfolio-page__category">Marketing</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="portfolio-page__item" data-category="design">
+                    <a href="#" class="portfolio-page__link">
+                        <div class="portfolio-page__image-wrapper">
+                            <img src="images/portfolio/instagram-stories.jpg" alt="Instagram Stories Concept" class="portfolio-page__image">
+                            <p class="portfolio-page__overlay-text">
+                                A set of Instagram Stories templates crafted for a cohesive and modern brand presence.
+                            </p>
+                        </div>
+                        <div class="portfolio-page__content">
+                            <h3 class="portfolio-page__title">Instagram Stories Concept</h3>
+                            <p class="portfolio-page__category">Design</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="portfolio-page__item" data-category="website">
+                    <a href="#" class="portfolio-page__link">
+                        <div class="portfolio-page__image-wrapper">
+                            <img src="images/portfolio/organic-food.jpg" alt="Organic Food" class="portfolio-page__image">
+                            <p class="portfolio-page__overlay-text">
+                                Website design and development for an organic and eco-friendly food delivery brand.
+                            </p>
+                        </div>
+                        <div class="portfolio-page__content">
+                            <h3 class="portfolio-page__title">Organic Food</h3>
+                            <p class="portfolio-page__category">Web Site</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="portfolio-page__item" data-category="website">
+                    <a href="#" class="portfolio-page__link">
+                        <div class="portfolio-page__image-wrapper">
+                            <img src="images/portfolio/fresh-coffee.jpg" alt="Fresh Coffee" class="portfolio-page__image">
+                            <p class="portfolio-page__overlay-text">
+                                A warm and inviting website design for a specialty coffee shop brand.
+                            </p>
+                        </div>
+                        <div class="portfolio-page__content">
+                            <h3 class="portfolio-page__title">Fresh Coffee</h3>
+                            <p class="portfolio-page__category">Web Site</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__brand">
+            <a href="#" class="footer__logo">
+                <span class="footer__logo-accent">Web</span>Studio
+            </a>
+            <p class="footer__text">Increase the flow of customers and sales for your business with digital marketing &amp; growth solutions.</p>
+        </div>
+
+        <div class="footer__socials">
+            <p class="footer__title">Social media</p>
+            <ul class="footer__socials-list">
+                <li class="footer__socials-item">
+                    <a class="footer__socials-link" href="https://www.instagram.com/" aria-label="Instagram">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.9843 4.70404C15.9468 3.8539 15.8093 3.26944 15.6124 2.76299C15.4092 2.22541 15.0967 1.74412 14.6872 1.34401C14.2871 0.937683 13.8026 0.621948 13.2713 0.421957C12.7619 0.22502 12.1805 0.0875415 11.3303 0.0500586C10.4738 0.00940124 10.2019 0 8.02963 0C5.85733 0 5.58543 0.00940124 4.73212 0.0468842C3.88197 0.0843671 3.29751 0.221967 2.79119 0.418783C2.25348 0.621948 1.77219 0.934509 1.37209 1.34401C0.965758 1.74412 0.650145 2.22858 0.450033 2.75994C0.253096 3.26944 0.115618 3.85073 0.0781347 4.70087C0.0374774 5.55736 0.0280762 5.82926 0.0280762 8.00156C0.0280762 10.1739 0.0374774 10.4458 0.0749603 11.2991C0.112443 12.1492 0.250043 12.7337 0.446981 13.2401C0.650145 13.7777 0.965758 14.259 1.37209 14.6591C1.77219 15.0654 2.25666 15.3812 2.78801 15.5812C3.29751 15.7781 3.8788 15.9156 4.72906 15.9531C5.58226 15.9907 5.85428 16 8.02658 16C10.1989 16 10.4708 15.9907 11.3241 15.9531C12.1742 15.9156 12.7587 15.7781 13.265 15.5812C14.3403 15.1654 15.1904 14.3153 15.6062 13.2401C15.803 12.7306 15.9406 12.1492 15.9781 11.2991C16.0156 10.4458 16.025 10.1739 16.025 8.00156C16.025 5.82926 16.0218 5.55736 15.9843 4.70404ZM14.5435 11.2366C14.509 12.018 14.3778 12.4399 14.2684 12.7212C13.9995 13.4183 13.4463 13.9715 12.7493 14.2403C12.468 14.3497 12.043 14.481 11.2646 14.5153C10.4207 14.5529 10.1676 14.5622 8.03281 14.5622C5.89799 14.5622 5.64172 14.5529 4.80085 14.5153C4.01945 14.481 3.5975 14.3497 3.31619 14.2403C2.96932 14.1121 2.65359 13.909 2.39731 13.6433C2.13163 13.3838 1.92847 13.0713 1.80027 12.7244C1.69087 12.4431 1.55962 12.018 1.52532 11.2397C1.48771 10.3958 1.47843 10.1426 1.47843 8.00779C1.47843 5.87297 1.48771 5.6167 1.52532 4.77596C1.55962 3.99455 1.69087 3.5726 1.80027 3.29129C1.92847 2.9443 2.13163 2.62869 2.40049 2.37229C2.65981 2.10661 2.97237 1.90345 3.31937 1.77537C3.60067 1.66597 4.0258 1.53472 4.80403 1.50029C5.64794 1.46281 5.90117 1.45341 8.03586 1.45341C10.1738 1.45341 10.4269 1.46281 11.2678 1.50029C12.0492 1.53472 12.4712 1.66597 12.7525 1.77537C13.0993 1.90345 13.4151 2.10661 13.6714 2.37229C13.937 2.63174 14.1402 2.9443 14.2684 3.29129C14.3778 3.5726 14.509 3.99761 14.5435 4.77596C14.581 5.61987 14.5904 5.87297 14.5904 8.00779C14.5904 10.1426 14.581 10.3927 14.5435 11.2366Z" fill="currentColor"/>
+                            <path d="M8.02961 3.89136C5.76049 3.89136 3.91943 5.73229 3.91943 8.00153C3.91943 10.2708 5.76049 12.1117 8.02961 12.1117C10.2989 12.1117 12.1398 10.2708 12.1398 8.00153C12.1398 5.73229 10.2989 3.89136 8.02961 3.89136ZM8.02961 10.6677C6.55752 10.6677 5.36344 9.47375 5.36344 8.00153C5.36344 6.52932 6.55752 5.33536 8.02961 5.33536C9.50182 5.33536 10.6958 6.52932 10.6958 8.00153C10.6958 9.47375 9.50182 10.6677 8.02961 10.6677V10.6677Z" fill="currentColor"/>
+                            <path d="M13.262 3.72888C13.262 4.25877 12.8323 4.68842 12.3023 4.68842C11.7724 4.68842 11.3428 4.25877 11.3428 3.72888C11.3428 3.19887 11.7724 2.76934 12.3023 2.76934C12.8323 2.76934 13.262 3.19887 13.262 3.72888V3.72888Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__socials-item">
+                    <a class="footer__socials-link" href="https://x.com/?lang=uk" aria-label="Twitter">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 3.039C15.405 3.3 14.771 3.473 14.11 3.557C14.79 3.151 15.309 2.513 15.553 1.744C14.919 2.122 14.219 2.389 13.473 2.538C12.871 1.897 12.013 1.5 11.077 1.5C9.261 1.5 7.799 2.974 7.799 4.781C7.799 5.041 7.821 5.291 7.875 5.529C5.148 5.396 2.735 4.089 1.114 2.098C0.831 2.589 0.665 3.151 0.665 3.756C0.665 4.892 1.25 5.899 2.122 6.482C1.595 6.472 1.078 6.319 0.64 6.078C0.64 6.088 0.64 6.101 0.64 6.114C0.64 7.708 1.777 9.032 3.268 9.337C3.001 9.41 2.71 9.445 2.408 9.445C2.198 9.445 1.986 9.433 1.787 9.389C2.212 10.688 3.418 11.643 4.852 11.674C3.736 12.547 2.319 13.073 0.785 13.073C0.516 13.073 0.258 13.061 0 13.028C1.453 13.965 3.175 14.5 5.032 14.5C11.068 14.5 14.368 9.5 14.368 5.166C14.368 5.021 14.363 4.881 14.356 4.742C15.007 4.28 15.554 3.703 16 3.039Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__socials-item">
+                    <a class="footer__socials-link" href="https://www.facebook.com/?locale=uk_UA" aria-label="Facebook">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.6648 2.65666H12.1254V0.112659C11.8734 0.0779924 11.0068 -7.62939e-06 9.99742 -7.62939e-06C7.89142 -7.62939e-06 6.44876 1.32466 6.44876 3.75933V5.99999H4.12476V8.84399H6.44876V16H9.29809V8.84466H11.5281L11.8821 6.00066H9.29742V4.04133C9.29809 3.21933 9.51942 2.65666 10.6648 2.65666Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__socials-item">
+                    <a class="footer__socials-link" href="https://ua.linkedin.com/" aria-label="LinkedIn">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.9961 16V15.9994H16.0001V10.1314C16.0001 7.2607 15.3821 5.04937 12.0261 5.04937C10.4128 5.04937 9.33009 5.9347 8.88809 6.77404H8.84143V5.31737H5.65942V15.9994H8.97276V10.71C8.97276 9.31737 9.23676 7.9707 10.9614 7.9707C12.6608 7.9707 12.6861 9.56004 12.6861 10.7994V16H15.9961Z" fill="currentColor"/>
+                            <path d="M0.263916 5.31797H3.58125V16H0.263916V5.31797Z" fill="currentColor"/>
+                            <path d="M1.92133 0C0.860667 0 0 0.860667 0 1.92133C0 2.982 0.860667 3.86067 1.92133 3.86067C2.982 3.86067 3.84267 2.982 3.84267 1.92133C3.842 0.860667 2.98133 0 1.92133 0V0Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__subscribe">
+            <p class="footer__title">Subscribe</p>
+            <form class="footer__form" action="#" method="post">
+                <input class="footer__input" type="email" name="email" placeholder="E-mail" aria-label="Email">
+                <button type="submit" class="button footer__submit">
+                    Subscribe
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 2L0 13.25L7.66994 15.6172L19.5 6.375L10.5017 16.4913L10.509 16.4936L10.5 16.4913V22L14.8013 17.8183L20.2501 19.5L24 2Z" fill="white"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</footer>
+<script src="scripts/mobile-menu.js"></script>
+<script src="scripts/portfolio-filter.js"></script>
+</body>
+</html>

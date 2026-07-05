@@ -64,6 +64,18 @@
     margin-inline: auto;
     min-width: 169px;
   }
+
+  &__success {
+    display: none;
+    margin-top: 16px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--color-success);
+
+    &--visible {
+      display: block;
+    }
+  }
 }
 
 @keyframes modal-fade-in {

@@ -1,0 +1,128 @@
+.portfolio-page {
+  padding: 100px 0 120px;
+
+  @media (max-width: 1179px) {
+    padding: 96px 0 96px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 72px 0;
+  }
+
+  &__filters {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+
+    @media (max-width: 1179px) {
+      flex-wrap: wrap;
+      row-gap: 16px;
+      margin-bottom: 64px;
+    }
+
+    @media (max-width: 767px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__filter-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: var(--color-primary);
+    background-color: var(--color-bg-light);
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-white);
+      background-color: var(--color-primary-pressed);
+      border-color: var(--color-primary-pressed);
+    }
+
+    &--active {
+      color: var(--color-white);
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+
+    @media (max-width: 767px) {
+      gap: 48px 16px;
+    }
+  }
+
+  &__item {
+    flex: 0 0 calc((100% - 2 * 24px) / 3);
+
+    @media (max-width: 1179px) {
+      flex: 0 0 calc((100% - 24px) / 2);
+    }
+
+    @media (max-width: 767px) {
+      flex: 0 0 100%;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    &:hover .portfolio-page__overlay-text,
+    &:focus-visible .portfolio-page__overlay-text {
+      transform: translateY(0);
+    }
+  }
+
+  &__image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__overlay-text {
+    position: absolute;
+    inset: 0;
+    padding: 40px 32px;
+    color: var(--color-bg-light);
+    background-color: var(--color-primary);
+    transform: translateY(100%);
+    transition: transform var(--transition-duration);
+    overflow-y: auto;
+
+    @media (max-width: 1179px) {
+      padding: 24px;
+      font-size: 14px;
+    }
+  }
+
+  &__content {
+    padding: 32px 16px;
+    border: 1px solid var(--color-accent);
+    border-top: none;
+
+    @media (max-width: 767px) {
+      padding: 24px 16px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__category {
+    color: var(--color-text-dark);
+  }
+}
